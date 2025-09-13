@@ -25,8 +25,16 @@ pipeline {
                 }
             }
         }
+        stage('output') {
+            steps {
+                echo 'This is printed in the Console Output'
+                sh 'echo "Hello from shell"'
+            }
+        }
     }
 }
+    
+
         
     
 
