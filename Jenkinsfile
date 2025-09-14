@@ -31,6 +31,16 @@ pipeline {
                 sh 'echo "Hello from shell"'
             }
         }
+        stage('\n meaning') {
+            steps {
+                echo 'onetwothreefourfive'
+            }
+        }
+        stage('\t meaning') {
+            steps {
+                echo 'onetwothreefourfive'
+            }
+        }
     }
 }
     
