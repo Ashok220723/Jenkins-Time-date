@@ -20,7 +20,7 @@ pipeline {
         stage('date step') {
             steps {
                 script {
-                    def currentDate = new Date().format("yyyy-MM-dd HH:mm:ss", TimeZone.getTimeZone('UTC'))
+                    def currentDate = new Date().format("dd-MM-yyyy HH:mm:ss", TimeZone.getTimeZone('UTC'))
                     echo "Current Date (UTC): ${currentDate}"
                 }
             }
