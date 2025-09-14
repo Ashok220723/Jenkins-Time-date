@@ -33,12 +33,12 @@ pipeline {
         }
         stage('\n meaning') {
             steps {
-                echo 'onetwothreefourfive'
+                echo 'one\ntwo\nthree\nfour\nfive'
             }
         }
         stage('\t meaning') {
             steps {
-                echo 'onetwothreefourfive'
+                echo 'one\ttwo\tthree\tfour\tfive'
             }
         }
     }
