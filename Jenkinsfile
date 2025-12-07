@@ -46,7 +46,7 @@ pipeline {
                 withKubeConfig(credentialsId: 'kubeconfig-dev-kt-k8s') {
                 script {
                     sh "kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml"
-                 
+                    sh "kubectl get po"
                     
                 }
                 }
